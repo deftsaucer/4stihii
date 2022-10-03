@@ -1,0 +1,262 @@
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    font-weight: 500;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 77px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+header {
+    height: 100vh;
+}
+
+/* Navigation */
+
+.nav-bar {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sing_up_link {
+    padding: 20px 30px;
+    font-weight: 700;
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(246, 125, 13, 1);
+    transition: .2s linear;
+}
+
+.sing_up_link:hover {
+    background-color: rgb(211, 106, 9);
+}
+
+/* Title */
+
+.title {
+    background: url("photos/general.png") no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+.title_content {
+    color: white;
+    max-width: 500px;
+    margin-left: 380px;
+}
+
+.title_text {
+    color: white;
+    margin-top: 25px;
+}
+
+.title_address {
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.title_number {
+    margin-top: 20px;
+}
+
+.title_links {
+    margin-top: 40px;
+}
+
+.title_timetable_link {
+    font-size: 24px;
+    padding: 20px 30px;
+    font-weight: 700;
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(189, 56, 176, 1);
+    transition: .2s linear;
+}
+
+.title_timetable_link:hover {
+    background-color: rgba(189, 56, 176, 0.7);
+}
+
+.title_sing_up_link {
+    font-size: 24px;
+    padding: 20px 30px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: black;
+    border-radius: 30px;
+    background-color: rgb(88, 238, 36);
+    transition: .2s linear;
+}
+
+.title_sing_up_link:hover {
+    background-color: rgba(88, 238, 36, 0.7);
+}
+
+/* About */
+
+.about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_title {
+    text-align: center;
+}
+
+.about_content {
+    max-width: 560px;
+}
+
+/* Post */
+
+.post {
+    margin-top: 50px;
+    background: url("photos/train.png") no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_title {
+    color: white;
+    font-size: 77px;
+}
+
+.post_link {
+    font-size: 24px;
+    margin-top: 50px;
+    padding: 20px 30px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(71, 221, 254, 1);
+    transition: .2s linear;
+}
+
+.post_link:hover {
+    background-color: rgba(71, 221, 254, 0.7);
+}
+
+/* Team */
+
+.team {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.team_title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team_paragraph {
+    margin: 30px auto 0;
+    width: 700px;
+}
+
+.team_trainers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team_trainer_card {
+    margin-top: 50px;
+    width: 335px;
+}
+
+.team_trainer_name {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.team_trainer_info {
+    margin-top: 20px;
+}
+
+/* Timetable*/
+
+.timetable {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.timetable_title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Price */
+
+.price {
+    margin-top: 100px;
+}
+
+.price_title {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.price_address {
+    font-size: 36px;
+    margin: 50px 0;
+}
+
+.price_row {
+    font-size: 36px;
+    padding: 5px 10px;
+}
+
+.price_row:nth-child(odd) {
+    background-color: #dcdcdc;
+}
+
+.price_value_first {
+    text-transform: uppercase;
+    color: #b20000;
+}
+
+.price_value {
+    float: right;
+}
+
+
