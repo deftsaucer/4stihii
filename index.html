@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <title>4Стихии</title>
 </head>
 <body>
@@ -268,8 +270,27 @@
 
     <div class="form">
         <div class="container">
-            <img src="photos/3696.JPG" class="form_photo" alt="">
-            <form action=""></form>
+            <div class="form_block">
+                <img src="photos/3696.JPG" class="form_photo" alt="">
+                <div class="form_content">
+                    <p class="form_content_title">Заполните форму</p>
+                    <p class="form_content_subtitle">запишитесь
+                        на <span class="form_content_subtitle_inner">БЕСПЛАТНОЕ</span> занятие</p>
+                    <form action="">
+                        <label for="name" class="form_label">Как к вам обращаться?</label><br>
+                        <input type="text" id="name" class="form_input" placeholder="Иван Иванов"><br>
+                        <label for="phone" class="form_label">Телефон для связи</label><br>
+                        <input type="tel" id="phone" class="form_input" placeholder="+7(999) 999-9999">
+                        <script>
+                            $(function () {
+                                $("#phone").mask("+7(999) 999-9999");
+                            });
+                        </script>
+                        <br>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

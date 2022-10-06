@@ -253,11 +253,52 @@ header {
 
 .price_value_first {
     text-transform: uppercase;
-    color: #b20000;
+    color: #d01818;
 }
 
 .price_value {
     float: right;
 }
 
+/* Form */
 
+.form {
+    margin-top: 150px;
+}
+
+.form_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_photo {
+    height: 740px;
+}
+
+.form_content {
+    height: 740px;
+    width: 600px;
+    background: linear-gradient(180deg, #120404 0%, rgba(18, 4, 4, 0.95) 100%);
+    border-radius: 60px;
+}
+
+.form_content_title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.form_content_subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.form_content_subtitle_inner {
+    color: rgba(224, 2, 2, 0.84);
+}
+
+.form_label {
+    color: white;
+}
