@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/slider.js"></script>
     <title>4Стихии</title>
 </head>
 <body>
@@ -276,7 +277,7 @@
                     <p class="form_content_title">Заполните форму</p>
                     <p class="form_content_subtitle">запишитесь
                         на <span class="form_content_subtitle_inner">БЕСПЛАТНОЕ</span> занятие</p>
-                    <form action="">
+                    <form class="form_content_fields" action="">
                         <label for="name" class="form_label">Как к вам обращаться?</label><br>
                         <input type="text" id="name" class="form_input" placeholder="Иван Иванов"><br>
                         <label for="phone" class="form_label">Телефон для связи</label><br>
@@ -286,8 +287,7 @@
                                 $("#phone").mask("+7(999) 999-9999");
                             });
                         </script>
-                        <br>
-                        <input type="submit" value="Отправить">
+                        <input type="submit" class="form_submit_button" value="Отправить">
                     </form>
                 </div>
             </div>
@@ -295,11 +295,88 @@
     </div>
 
     <div class="contacts">
+        <div class="container">
+            <h1 class="contacts_title">Контакты</h1>
+            <div class="contacts_content">
+                <div class="contacts_phones">
+                    <p class="contacts_phones_title">Телефоны:</p>
+                    <div class="contacts_phones_group">
+                        <p class="contacts_phones_content">Богдана Хмельницкого, 33/1</p>
+                        <p class="contacts_phones_content">Аэропорт, 1а</p>
+                        <p class="contacts_phones_content">+7 999 999 99 99</p>
+                    </div>
+                    <div class="contacts_phones_group">
+                        <p class="contacts_phones_content">Красный проспект, 153г</p>
+                        <p class="contacts_phones_content">+7 999 999 99 99</p>
+                    </div>
+                    <div class="contacts_phones_group">
+                        <p class="contacts_phones_content">1905 года, 69</p>
+                        <p class="contacts_phones_content">+7 999 999 99 99</p>
+                    </div>
+                    <div class="contacts_phones_group">
+                        <p class="contacts_phones_content">Шмидта, 6/1</p>
+                        <p class="contacts_phones_content">+7 999 999 99 99</p>
+                    </div>
+                </div>
+                <div class="contacts_socials">
+                    <p class="contacts_socials_title">Социальные сети:</p>
+                    <img src="icons/telegram.svg" alt="" class="contacts_socials_icons tg">
+                    <img src="icons/vk.svg" alt="" class="contacts_socials_icons vk">
+                    <img src="icons/whats.svg" alt="" class="contacts_socials_icons whats">
+                </div>
+            </div>
+            <h2 class="contacts_map_title">Карта</h2>
+            <div class="contacts_map">
+                <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3d1b97b7b552e7620cd85a9331a3be08f5206d1e22cf7b217fb7cb2555ab80c&amp;width=1170&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
 
+    <div class="gallery">
+        <div class="container">
+            <h1 class="gallery_title">Галерея</h1>
+            <div class="slider">
+                <div class="slider-slides">
+                    <div class="slider-slide" style="background-image: url(photos/3696.JPG);"></div>
+                    <div class="slider-slide" style="background-image: url(photos/3696.JPG);"></div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </div>
     </div>
 </div>
 <footer>
-
+    <div class="container">
+        <div class="footer_contacts">
+            <div class="footer_address">
+                <p class="footer_title">Адреса:</p>
+                <p class="footer_address_content">Богдана Хмельницкого, 33/1</p>
+                <p class="footer_address_content">Аэропорт, 1а</p>
+                <p class="footer_address_content">Красный проспект, 153г</p>
+                <p class="footer_address_content">1905 года, 69</p>
+                <p class="footer_address_content">Шмидта, 6/1</p>
+            </div>
+            <div class="footer_phones">
+                <p class="footer_title">Телефоны:</p>
+                <p class="footer_phones_content">+7 999 999 99 99</p><br>
+                <p class="footer_phones_content">+7 999 999 99 99</p>
+                <p class="footer_phones_content">+7 999 999 99 99</p>
+                <p class="footer_phones_content">+7 999 999 99 99</p>
+            </div>
+            <div class="footer_mail">
+                <p class="footer_title">Почта:</p>
+                <p class="footer_phones_content">asdfasdf@gmail.com</p>
+                <p class="footer_phones_content">asdfasdf@gmail.com</p>
+            </div>
+        </div>
+        <img src="icons/logo_footer.svg" class="footer_logo" alt="4 Стихии">
+        <span class="footer_socials">
+            <img src="icons/footer_telegram.svg" alt="">
+            <img src="icons/footer_vk.svg" alt="">
+            <img src="icons/footer_whats.svg" alt="">
+        </span>
+    </div>
 </footer>
 </body>
 </html>
