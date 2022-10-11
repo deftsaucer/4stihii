@@ -32,7 +32,7 @@ h4 {
 }
 
 header {
-    height: 100vh;
+    height: 1000px;
 }
 
 /* Navigation */
@@ -69,7 +69,8 @@ header {
 .title {
     background: url("photos/general.png") no-repeat;
     background-size: cover;
-    height: 80%;
+    height: 750px;
+    padding-top: 50px;
 }
 
 .title_content {
@@ -80,7 +81,6 @@ header {
 
 .title_text {
     color: white;
-    margin-top: 25px;
 }
 
 .title_address {
